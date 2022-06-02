@@ -1,0 +1,9 @@
+#App.dark-mode {
+  background-color: rgb(37, 37, 37);
+  color: greenyellow;
+}
+
+#App.light-mode {
+  background-color: rgb(255, 255, 255);
+  color: rgb(33, 37, 41);
+}

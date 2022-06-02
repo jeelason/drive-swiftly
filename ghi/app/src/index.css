@@ -1,0 +1,41 @@
+body,
+#root,
+#App {
+  height: 100vh;
+  width: 100vw;
+}
+
+table.table {
+  color: inherit;
+}
+.dark-mode .table-striped > tbody > tr:nth-child(odd) > * {
+  background-color: rgb(56, 55, 55);
+  color: white;
+}
+.dark-mode .shadow {
+  background-color: rgb(51, 51, 51);
+}
+.icon {
+  width: 16px;
+  height: 16px;
+}
+.icon-account-login {
+  fill: #f00;
+}
+
+label {
+  color: black;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
