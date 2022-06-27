@@ -1,6 +1,4 @@
-# Schwifty Dealership Management
-
-## Things to add
+# Drive Swiftly Dealership Management
 
 ### Entire Site
 
