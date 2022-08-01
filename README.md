@@ -1,9 +1,44 @@
 # Drive Swiftly Dealership Management
 
+
+## Technologies Used
+
+- Setup and Configuration: \
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![PyPI](https://img.shields.io/badge/PYPI-%231572B6.svg?style=for-the-badge&logo=pypi&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
+
+
+- Front End Development : \
+![React.JS](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Bootstrap](	https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+- Back End Development: \
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+
+## Setup
+
+Install Docker
+
+
+In your terminal, create docker volume: \
+`docker volume create beta-data`
+
+Docker compose build and then up: \
+`docker compose build`
+`docker compose up`
+
+Access in browser:\
+`http://localhost:3000`
+
+***
+
 ### Entire Site
 
 - Dark Mode/Light Mode toggle
-- Possibly authentication
+- Stretch goal: authentication/JWT
 
 ### Services
 
