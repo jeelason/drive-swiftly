@@ -15,34 +15,37 @@ function AutomobileList() {
     getAutomobileData();
   }, []);
   return (
-    <table className="table table-striped">
-      <thead>
-        <tr>
-          <th>Manufacturer</th>
-          <th>Year</th>
-          <th>Model Name</th>
-          <th>Color</th>
-          <th>VIN</th>
-          <th>Picture</th>
-        </tr>
-      </thead>
-      <tbody>
-        {models.map((model) => {
-          return (
-            <tr key={model.vin}>
-              <td>{model.model.manufacturer.name}</td>
-              <td>{model.year}</td>
-              <td>{model.model.name}</td>
-              <td>{model.color}</td>
-              <td>{model.vin}</td>
-              <td>
-                <img src={model.model.picture_url} alt="car" height="110" />
-              </td>
-            </tr>
-          );
-        })}
-      </tbody>
-    </table>
+    <>
+      <h1 className="pt-3">Automobile List</h1>
+      <table className="table table-striped">
+        <thead>
+          <tr>
+            <th>Manufacturer</th>
+            <th>Year</th>
+            <th>Model Name</th>
+            <th>Color</th>
+            <th>VIN</th>
+            <th>Picture</th>
+          </tr>
+        </thead>
+        <tbody>
+          {models.map((model) => {
+            return (
+              <tr key={model.vin}>
+                <td>{model.model.manufacturer.name}</td>
+                <td>{model.year}</td>
+                <td>{model.model.name}</td>
+                <td>{model.color}</td>
+                <td>{model.vin}</td>
+                <td>
+                  <img src={model.model.picture_url} alt="car" height="110" />
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </>
   );
 }
 

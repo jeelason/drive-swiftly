@@ -12,7 +12,7 @@ function AppointmentHistory() {
       );
       const appointmentData = await responseAppointment.json();
       const filteredAppointmentData = appointmentData.appointments.filter(
-        appointment => appointment.finished === true
+        (appointment) => appointment.finished === true
       );
       setAppointments(filteredAppointmentData);
     };
@@ -22,38 +22,39 @@ function AppointmentHistory() {
 
   const handleClick = () => {
     const filtered = appointments.filter(
-      appointment => appointment.vin === search
+      (appointment) => appointment.vin === search
     );
     setFilteredAppointments(filtered);
   };
 
   return (
     <>
+      <h1 className="pt-3">Appointment History</h1>
       <form
-        className='form-inline'
-        onSubmit={e => {
+        className="form-inline"
+        onSubmit={(e) => {
           e.preventDefault();
         }}
       >
-        <div className='input-group p-2'>
+        <div className="input-group p-2">
           <input
-            className='form-control mr-sm-2 pr-3'
-            type='search'
-            placeholder='Search vins'
-            onChange={event => setSearch(event.target.value)}
+            className="form-control mr-sm-2 pr-3"
+            type="search"
+            placeholder="Search vins"
+            onChange={(event) => setSearch(event.target.value)}
           />
-          <div className='px-2'>
+          <div className="px-2">
             <button
-              className='btn btn-outline-success my-2 my-sm-0'
+              className="btn btn-outline-success my-2 my-sm-0"
               onClick={handleClick}
-              type='submit'
+              type="submit"
             >
               Search VINs
             </button>
           </div>
         </div>
       </form>
-      <table className='table table-striped'>
+      <table className="table table-striped">
         <thead>
           <tr>
             <th>Customer</th>
@@ -66,7 +67,7 @@ function AppointmentHistory() {
           </tr>
         </thead>
         <tbody>
-          {filteredAppointments.map(appointment => {
+          {filteredAppointments.map((appointment) => {
             return (
               <tr key={appointment.id}>
                 <td>{appointment.customer_name}</td>

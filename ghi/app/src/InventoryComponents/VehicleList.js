@@ -16,28 +16,31 @@ function VehicleList() {
   }, []);
 
   return (
-    <table className="table table-striped">
-      <thead>
-        <tr>
-          <th>Manufacturer</th>
-          <th>Model</th>
-          <th>Picture</th>
-        </tr>
-      </thead>
-      <tbody>
-        {vehicles.map((vehicle) => {
-          return (
-            <tr key={vehicle.id}>
-              <td>{vehicle.manufacturer.name}</td>
-              <td>{vehicle.name}</td>
-              <td>
-                <img src={vehicle.picture_url} alt="car" height="110" />
-              </td>
-            </tr>
-          );
-        })}
-      </tbody>
-    </table>
+    <div>
+      <h1 className="pt-3">Vehicle Models List</h1>
+      <table className="table table-striped">
+        <thead>
+          <tr>
+            <th>Manufacturer</th>
+            <th>Model</th>
+            <th>Picture</th>
+          </tr>
+        </thead>
+        <tbody>
+          {vehicles.map((vehicle) => {
+            return (
+              <tr key={vehicle.id}>
+                <td>{vehicle.manufacturer.name}</td>
+                <td>{vehicle.name}</td>
+                <td>
+                  <img src={vehicle.picture_url} alt="car" height="110" />
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
   );
 }
 

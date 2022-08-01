@@ -9,7 +9,7 @@ function AppointmentList() {
     );
     const appointmentData = await responseAppointment.json();
     const filteredAppointmentData = appointmentData.appointments.filter(
-      appointment => appointment.finished === false
+      (appointment) => appointment.finished === false
     );
     setAppointments(filteredAppointmentData);
   };
@@ -18,14 +18,14 @@ function AppointmentList() {
     fetchAppointmentData();
   }, []);
 
-  const deleteAppointment = async id => {
+  const deleteAppointment = async (id) => {
     await fetch(`http://localhost:8080/api/appointments/${id}/`, {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
     });
   };
 
-  const updateAppointment = async id => {
+  const updateAppointment = async (id) => {
     const appointmentUrl = `http://localhost:8080/api/appointments/${id}/`;
     const fetchConfig = {
       method: "PUT",
@@ -43,13 +43,14 @@ function AppointmentList() {
     }
   };
 
-  const handleClick = id => {
+  const handleClick = (id) => {
     updateAppointment(id);
   };
 
   return (
     <>
-      <table className='table table-striped'>
+      <h1 className="pt-3">Service Appointments</h1>
+      <table className="table table-striped">
         <thead>
           <tr>
             <th>Customer</th>
@@ -63,7 +64,7 @@ function AppointmentList() {
         </thead>
         <tbody>
           {appointments &&
-            appointments.map(appointment => {
+            appointments.map((appointment) => {
               return (
                 <tr key={appointment.id}>
                   <td>{appointment.customer_name}</td>
@@ -86,7 +87,7 @@ function AppointmentList() {
                   </td>
                   <td>
                     <button
-                      className='btn btn-success'
+                      id="complete"
                       onClick={() => handleClick(appointment.id)}
                     >
                       Finished

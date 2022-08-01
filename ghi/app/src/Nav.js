@@ -3,14 +3,14 @@ import Switch from "./UtilityComponents/Switch";
 
 function Nav({ darkTheme, onThemeChange }) {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-success">
+    <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container-fluid" id="work">
         <NavLink className="navbar-brand" to="/">
-          Drive Schwifty
+          Drive Swiftly
         </NavLink>
         <div className="p-2 dropdown">
           <NavLink
-            className="btn btn-secondary dropdown-toggle"
+            className="dropdown-toggle"
             to="#"
             role="button"
             id="dropdownMenuLink"
@@ -43,7 +43,7 @@ function Nav({ darkTheme, onThemeChange }) {
         </div>
         <div className="p-2 dropdown">
           <NavLink
-            className="btn btn-secondary dropdown-toggle"
+            className="dropdown-toggle"
             to="#"
             role="button"
             id="dropdownMenuLink"
@@ -70,7 +70,7 @@ function Nav({ darkTheme, onThemeChange }) {
         </div>
         <div className="p-2 dropdown">
           <NavLink
-            className="btn btn-secondary dropdown-toggle"
+            className="dropdown-toggle"
             to="#"
             role="button"
             id="dropdownMenuLink"

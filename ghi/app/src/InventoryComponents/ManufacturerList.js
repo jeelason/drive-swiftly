@@ -13,22 +13,25 @@ function ManufacturerList() {
   }, []);
 
   return (
-    <table className="table table-striped">
-      <thead>
-        <tr>
-          <th>Name</th>
-        </tr>
-      </thead>
-      <tbody>
-        {manufacturers.map((manufacturer) => {
-          return (
-            <tr key={manufacturer.id}>
-              <td>{manufacturer.name}</td>
-            </tr>
-          );
-        })}
-      </tbody>
-    </table>
+    <div>
+      <h1 className="pt-3">Manufacturers List</h1>
+      <table className="table table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          {manufacturers.map((manufacturer) => {
+            return (
+              <tr key={manufacturer.id}>
+                <td>{manufacturer.name}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
   );
 }
 
