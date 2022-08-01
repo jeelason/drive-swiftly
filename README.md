@@ -12,7 +12,8 @@
 
 ### Sales
 
-- List of sales people with the ability to delete them
+- Display and create sales history amongst salespersons and what cars are sold to customers
+- Check to see if the vehicle was already sold when selling a vehicle
 
 ### Inventory
 
@@ -61,3 +62,21 @@ In order to grab that data, I will be using polling, to poll the Inventory datab
 ## Sales microservice
 
 The sales microservice records a salesperson's automobile sales, tracking the movement of what is in the vehicle inventory. The models required will be a Salesperson, Customer, and a Sales record. The Sales record model will poll for for data in the microservice to pull data from the main inventory application.
+
+## App Overview
+
+<div align="center"><br />
+    <h3 align="center">Homepage & Dark mode option</h3>
+  <img src="./ss/d-1.png" alt="homepage" width='40%'/>
+  <img src="./ss/d-2.png" alt="darkmode" width='40%'/><br />  
+    <h3 align="center">Example form submission; appointment lists</h3>
+    <img src="./ss/d-8.png" alt="form example" width='40%' />
+    <img src="./ss/d-4.png" alt="service appointments" width='40%' /> <br />
+    <h3 align="center">Car lists and populated sales</h3>
+    <img src="./ss/d-3.png" alt="auto list" width='40%' />
+    <img src="./ss/d-6.png" alt="sales list" width='40%' /><br />
+    <h3 align="center">VIN Search and Salesperson record history filtering</h3>
+    <img src="./ss/d-5.png" alt="appointment search" width='40%' />
+    <img src="./ss/d-7.png" alt="sales history" width='40%' /><br />
+
+  </div>
