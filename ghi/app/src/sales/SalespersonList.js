@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 function SalespersonList() {
-  const [salespersons, setsalesPersons] = useState([]);
+  const [salespersons, setSalesPersons] = useState([]);
 
   useEffect(() => {
     const getSalespersonsData = async () => {
@@ -9,7 +9,7 @@ function SalespersonList() {
         "http://localhost:8090/api/salespersons/"
       );
       const salespersonModelData = await salespersonModelResponse.json();
-      setsalesPersons(salespersonModelData.salespersons);
+      setSalesPersons(salespersonModelData.salespersons);
     };
 
     getSalespersonsData();

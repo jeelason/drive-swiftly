@@ -22,7 +22,8 @@ function AppointmentHistory() {
 
   const handleClick = () => {
     const filtered = appointments.filter(
-      (appointment) => appointment.vin === search
+      (appointment) => appointment.vin.includes(search)
+      //before it was appointment.vin === search  || 10/30/22
     );
     setFilteredAppointments(filtered);
   };
