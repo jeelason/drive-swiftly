@@ -16,13 +16,13 @@ import AutomobileForm from "./InventoryComponents/AutomobileForm";
 import VehicleList from "./InventoryComponents/VehicleList";
 import VehicleForm from "./InventoryComponents/VehicleForm";
 
-import SalespersonForm from "./sales/SalespersonForm";
-import SalespersonList from "./sales/SalespersonList";
-import CustomerForm from "./sales/CustomerForm";
-import CustomerList from "./sales/CustomerList";
-import SalesForm from "./sales/SalesForm";
-import SalesList from "./sales/SalesList";
-import SalesHistoryList from "./sales/SalesHistoryList";
+import SalespersonForm from "./SalesComponents/SalespersonForm";
+import SalespersonList from "./SalesComponents/SalespersonList";
+import CustomerForm from "./SalesComponents/CustomerForm";
+import CustomerList from "./SalesComponents/CustomerList";
+import SalesForm from "./SalesComponents/SalesForm";
+import SalesList from "./SalesComponents/SalesList";
+import SalesHistoryList from "./SalesComponents/SalesHistoryList";
 
 import "./App.css";
 
